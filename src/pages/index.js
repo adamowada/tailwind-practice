@@ -1,9 +1,11 @@
-import Hero from "@/components/Hero";
+import HeroSimpleCentered from "@/components/HeroSimpleCentered";
+import HeroImageTiles from "@/components/HeroImageTiles";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <HeroSimpleCentered />
+      <HeroImageTiles />
     </>
   );
 }

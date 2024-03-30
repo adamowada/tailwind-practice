@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -9,7 +10,7 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 
-export default function Hero() {
+export default function HeroSimpleCentered() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -44,9 +45,9 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href="/login" className="text-sm font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -84,12 +85,12 @@ export default function Hero() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <Link
+                    href="/login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
