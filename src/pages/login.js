@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
 /*
   This example requires some changes to your config:
   
@@ -27,11 +30,16 @@ export default function Login() {
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <img
-                className="h-10 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt="Your Company"
-              />
+              <Link href="/">
+                <Image
+                  className="h-10 w-auto"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  alt="Your Company"
+                  width={40}
+                  height={40}
+                  unoptimized={true}
+                />
+              </Link>
               <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
                 Sign in to your account
               </h2>
