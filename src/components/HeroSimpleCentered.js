@@ -1,4 +1,3 @@
-import Header from './Header'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/24/outline'
@@ -8,8 +7,6 @@ export default function HeroSimpleCentered() {
 
   return (
     <div className="bg-white">
-      <Header />
-
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"

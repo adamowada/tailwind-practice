@@ -1,5 +1,5 @@
 import Header from "@/components/Header"
-import Link from "next/link"
+import Footer from "@/components/Footer"
 
 const posts = [
   {
@@ -89,6 +89,8 @@ export default function Blog() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }
