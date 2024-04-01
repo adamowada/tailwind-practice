@@ -420,7 +420,7 @@ export default function Sidebar({ children, current }) {
           </div>
 
           <main className='py-10'>
-            <div className='px-4 sm:px-6 lg:px-8'>{children}</div>
+            <div className='md:w-2/3 mx-auto lg:w-full lg:px-8'>{children}</div>
           </main>
         </div>
       </div>
